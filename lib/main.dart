@@ -1,19 +1,19 @@
 import 'package:flutter/material.dart';
 
 void main(){
-runApp(MyApp());
+  runApp(MyApp());
 }
+
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
+    return MaterialApp(
       home: HomeScreen(),
     );
   }
 }
-
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -25,9 +25,9 @@ class HomeScreen extends StatefulWidget {
 class _HomeScreenState extends State<HomeScreen> {
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
+    return  Scaffold(
       appBar: AppBar(
-        title:Text('Flutter App'),
+        title: Text('Flutter App'),
         backgroundColor: Colors.red
         ),
     );
